@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Projects = () => {
     return (
-        <div className='w-full'>
+        <div name='projects' className='w-full'>
             <div className='max-w-[1240px] mx-auto px-2 py-16'>
                 <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Projects</p>
                 <h2 className='py-4'>What I've Built</h2>
@@ -14,7 +14,7 @@ const Projects = () => {
 
                         <Image className='rounded-xl group-hover:opacity-10' src='/../public/assets/projects/netflix.jpg' alt='/' width='400px' height='300px' />
                         <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-                            <h3 className='text-2xl text-white tracking-wider text-center'>Netflix</h3>
+                            <h3 className='text-2xl text-white tracking-wider text-center'>Netflix Clone</h3>
                             <p className='pb-4 pt-2 text-white text-center'>
                                 React js
                             </p>
