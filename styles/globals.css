@@ -18,6 +18,9 @@
   h2{
     @apply text-3xl sm:text-4xl
   }
+  p{
+    @apply font-medium
+  }
 
   li{
     @apply cursor-pointer font-semibold
@@ -26,6 +29,8 @@
   button{
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
   }
+
+ 
 }
 
 
