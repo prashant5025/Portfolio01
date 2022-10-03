@@ -4,6 +4,7 @@ import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import {HiOutlineChevronDoubleDown} from 'react-icons/hi'
 
 
 const Navbar = () => {
@@ -40,7 +41,7 @@ const Navbar = () => {
           <Link href="#projects">
             <li className="ml-10 text-sm uppercase hover:border-b">Projects</li>
           </Link>
-          <Link href="">
+          <Link href="#contact">
             <li className="ml-10 text-sm uppercase hover:border-b">
               Contact Us
             </li>
@@ -82,20 +83,20 @@ const Navbar = () => {
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
-              <Link href="/">
-                <li className="py-4 text-sm ">Home</li>
+              <Link href="#home">
+                <li onClick={()=>setNav(false)} className="py-4 text-sm ">Home</li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm ">About</li>
+              <Link href="#about">
+                <li onClick={()=>setNav(false)} className="py-4 text-sm ">About</li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm ">Skills</li>
+              <Link href="#skills">
+                <li onClick={()=>setNav(false)} className="py-4 text-sm ">Skills</li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm ">Projects</li>
+              <Link href="#projects">
+                <li onClick={()=>setNav(false)} className="py-4 text-sm ">Projects</li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm ">Contact us</li>
+              <Link href="#contact">
+                <li onClick={()=>setNav(false)} className="py-4 text-sm ">Contact us</li>
               </Link>
             </ul>
 
@@ -120,6 +121,11 @@ const Navbar = () => {
               </div>
             </div>
           </div>
+          <Link href='/'>
+            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+              <HiOutlineChevronDoubleDown size={25} className="cursor-pointer" />
+            </div>
+          </Link>
         </div>
       </div>
     </div>
