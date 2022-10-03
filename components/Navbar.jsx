@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -11,6 +12,10 @@ const Navbar = () => {
   const handleNav = () => {
     setNav(!nav);
   };
+
+
+
+
 
   return (
     <div className="fixed w-full h-20 shadow-xl z-[100]">
@@ -23,10 +28,10 @@ const Navbar = () => {
           height="50"
         />
         <ul className="hidden md:flex">
-          <Link href="">
+          <Link href="#home">
             <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
           </Link>
-          <Link href="">
+          <Link href="#about">
             <li className="ml-10 text-sm uppercase hover:border-b">About</li>
           </Link>
           <Link href="">
