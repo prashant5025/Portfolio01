@@ -18,7 +18,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div className="fixed bg-[#ecf0f3] w-full h-20 shadow-xl z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           className="object-fill"
@@ -34,7 +34,7 @@ const Navbar = () => {
           <Link href="#about">
             <li className="ml-10 text-sm uppercase hover:border-b">About</li>
           </Link>
-          <Link href="">
+          <Link href="#skills">
             <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
           </Link>
           <Link href="">
